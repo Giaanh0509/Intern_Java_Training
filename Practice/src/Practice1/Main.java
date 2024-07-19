@@ -11,5 +11,8 @@ public class Main {
 
         Circle circle = new Circle(5);
         System.out.println(circle);
+
+        Triangle triangle = new Triangle(10, 24, 26);
+        System.out.println(triangle);
     }
 }
