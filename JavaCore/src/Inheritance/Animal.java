@@ -1,7 +1,7 @@
 package Inheritance;
 
-public class Animal {
-    String name;
+public abstract class Animal {
+    private String name;
 
     public Animal(String name) {
         this.name = name;
@@ -19,7 +19,5 @@ public class Animal {
         System.out.println(name + " is eating.");
     }
 
-    public void makeSound() {
-        return;
-    }
+    public abstract void makeSound();
 }
