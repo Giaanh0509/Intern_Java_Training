@@ -1,4 +1,4 @@
-package Practice2;
+package Practice.Practice2;
 
 public abstract class Product {
     private String code;

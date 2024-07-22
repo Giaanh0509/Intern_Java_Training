@@ -1,4 +1,4 @@
-package Practice2;
+package Practice.Practice2;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;

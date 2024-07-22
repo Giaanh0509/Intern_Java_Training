@@ -1,4 +1,4 @@
-package Practice3;
+package Practice.Practice3;
 
 public class VehicleOwner {
     private String idNumber;

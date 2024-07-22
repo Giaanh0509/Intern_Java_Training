@@ -1,24 +1,24 @@
-package Practice3;
+package Practice.Practice3;
 
-public class Truck extends Vehicle {
-    private double tonnage;
+public class Motorcycle extends Vehicle{
+    private int capacity;
 
-    public Truck(String vehicleNumber, String manufacturer, int yearOfManufacture, String vehicleColor, VehicleOwner owner, double tonnage) {
+    public Motorcycle(String vehicleNumber, String manufacturer, int yearOfManufacture, String vehicleColor, VehicleOwner owner, int capacity) {
         super(vehicleNumber, manufacturer, yearOfManufacture, vehicleColor, owner);
-        this.tonnage = tonnage;
+        this.capacity = capacity;
     }
 
-    public Truck(Vehicle vehicle, double tonnage) {
+    public Motorcycle(Vehicle vehicle, int capacity) {
         super(vehicle.getVehicleNumber(), vehicle.getManufacturer(), vehicle.getYearOfManufacture(), vehicle.getVehicleColor(), vehicle.getOwner());
-        this.tonnage = tonnage;
+        this.capacity = capacity;
     }
 
-    public double getTonnage() {
-        return tonnage;
+    public int getCapacity() {
+        return capacity;
     }
 
-    public void setTonnage(double tonnage) {
-        this.tonnage = tonnage;
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
     }
 
     @Override
@@ -30,6 +30,6 @@ public class Truck extends Vehicle {
                 + ", owner [idNumber: " + this.getOwner().getIdNumber()
                 + ", fullName: " + this.getOwner().getFullName()
                 + ", email: " + this.getOwner().getEmail() + "]"
-                + ", tonnage" + tonnage;
+                + ", capacity" + capacity;
     }
 }

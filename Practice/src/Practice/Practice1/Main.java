@@ -1,4 +1,4 @@
-package Practice1;
+package Practice.Practice1;
 
 
 public class Main {

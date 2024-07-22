@@ -1,4 +1,4 @@
-package Practice2;
+package Practice.Practice2;
 
 public class Electronic extends Product {
     private int warrantyPeriod;
