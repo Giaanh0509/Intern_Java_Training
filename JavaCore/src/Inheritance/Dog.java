@@ -1,6 +1,8 @@
-package Practice.Inheritance;
+package Inheritance;
 
-public class Dog extends Animal{
+import Inheritance.Animal;
+
+public class Dog extends Animal {
     public Dog(String name) {
         super(name);
     }

@@ -1,4 +1,4 @@
-package Practice.Inheritance;
+package Inheritance;
 
 public class Animal {
     String name;
