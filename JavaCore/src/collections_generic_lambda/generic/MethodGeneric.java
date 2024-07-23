@@ -1,4 +1,4 @@
-package generic;
+package collections_generic_lambda.generic;
 
 public class MethodGeneric {
         public static <T> void printArray(T[] inputArray) {

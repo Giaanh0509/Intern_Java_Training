@@ -1,4 +1,4 @@
-package collections;
+package collections_generic_lambda.collections;
 
 import java.util.HashSet;
 import java.util.Set;

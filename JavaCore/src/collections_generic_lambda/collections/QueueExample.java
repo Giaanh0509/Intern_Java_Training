@@ -1,4 +1,4 @@
-package collections;
+package collections_generic_lambda.collections;
 
 import java.util.LinkedList;
 import java.util.Queue;

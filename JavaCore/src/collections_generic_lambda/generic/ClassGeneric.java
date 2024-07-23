@@ -1,4 +1,4 @@
-package generic;
+package collections_generic_lambda.generic;
 
 public class ClassGeneric<T> {
     private T t;

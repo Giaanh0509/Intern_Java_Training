@@ -1,4 +1,4 @@
-package lambda;
+package collections_generic_lambda.lambda;
 
 import java.util.Arrays;
 import java.util.List;
