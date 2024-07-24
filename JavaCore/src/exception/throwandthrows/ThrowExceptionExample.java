@@ -1,4 +1,4 @@
-package exception;
+package exception.throwandthrows;
 
 public class ThrowExceptionExample {
 

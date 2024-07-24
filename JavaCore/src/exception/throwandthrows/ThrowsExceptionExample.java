@@ -1,4 +1,4 @@
-package exception;
+package exception.throwandthrows;
 
 public class ThrowsExceptionExample {
     public static int divide(int a, int b) throws ArithmeticException {
