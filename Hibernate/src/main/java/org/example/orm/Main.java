@@ -8,7 +8,7 @@ import org.hibernate.Transaction;
 public class Main {
     public static void main(String[] args) {
 
-        Employee employee = new Employee("John", "Doe", "john.doe@example.com");
+        Employee employee = new Employee("Hoang", "Anh", "hoanganh0509@gmail.com");
 
         Session session = HibernateUntil.getSessionFactory().openSession();
         Transaction transaction = null;
