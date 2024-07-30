@@ -1,4 +1,4 @@
-package org.example.orm.model;
+package org.example.configannotation.model;
 
 import jakarta.persistence.*;
 

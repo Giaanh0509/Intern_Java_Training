@@ -13,6 +13,7 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
 
-        <mapping class="org.example.orm.model.Employee"/>
+<!--    <mapping class="org.example.configmappingfile.model.Student"/>-->
+        <mapping resource="student.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

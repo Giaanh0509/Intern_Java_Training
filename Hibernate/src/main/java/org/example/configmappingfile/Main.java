@@ -1,21 +1,19 @@
-package org.example.orm;
-
-import org.example.orm.model.Employee;
-import org.example.orm.util.HibernateUntil;
+package org.example.configmappingfile;
+import org.example.configmappingfile.util.HibernateUntil;
+import org.example.configmappingfile.model.Student;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 public class Main {
     public static void main(String[] args) {
-
-        Employee employee = new Employee("Hoang", "Anh", "hoanganh0509@gmail.com");
+        Student student = new Student("20214984", "Hoang Anh", "hoanganh0509@gmail.com", 21);
 
         Session session = HibernateUntil.getSessionFactory().openSession();
         Transaction transaction = null;
 
         try {
             transaction = session.beginTransaction();
-            session.save(employee);
+            session.save(student);
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) {

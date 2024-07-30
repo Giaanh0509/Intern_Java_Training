@@ -1,4 +1,4 @@
-package org.example.orm.util;
+package org.example.configannotation.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
