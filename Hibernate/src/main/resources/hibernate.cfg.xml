@@ -4,16 +4,17 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/employee</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">123456</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/employeemanagement</property>
+        <property name="hibernate.connection.username">spring</property>
+        <property name="hibernate.connection.password">spring</property>
 
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
 
-        <mapping class="org.example.configannotation.model.Employee"/>
+        <mapping class="org.example.ormappingannotation.model.Employee"/>
+        <mapping class="org.example.ormappingannotation.model.ParkingSpot"/>
 <!--        <mapping resource="student.hbm.xml"/>-->
     </session-factory>
 </hibernate-configuration>
