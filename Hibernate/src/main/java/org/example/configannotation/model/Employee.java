@@ -60,4 +60,14 @@ public class Employee {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id='" + this.getId() + '\'' +
+                "firstName='" + this.getFirstName() + '\'' +
+                ", lastName='" + this.getLastName() + '\'' +
+                ", email='" + this.getEmail() + '\'' +
+                '}';
+    }
 }
