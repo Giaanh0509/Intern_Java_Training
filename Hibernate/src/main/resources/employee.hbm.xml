@@ -3,7 +3,7 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name="org.example.ormappingmpfile.model.Employee" table="employee">
-        <id name="id" column="id">
+        <id name="id" column="employee_id">
             <generator class="native"/>
         </id>
 

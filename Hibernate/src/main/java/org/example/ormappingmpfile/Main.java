@@ -8,8 +8,7 @@ import org.hibernate.Transaction;
 public class Main {
     public static void main(String[] args) {
         Employee employee = new Employee("Hoang Anh");
-        ParkingSpot parkingSpot = new ParkingSpot("Parking lot A");
-        parkingSpot.setEmployee(employee);
+        ParkingSpot parkingSpot = new ParkingSpot("Parking lot A", employee);
         employee.setParkingSpot(parkingSpot);
 
         Session session = HibernateUntil.getSessionFactory().openSession();

@@ -5,11 +5,13 @@
 <hibernate-mapping>
     <class name="org.example.ormappingmpfile.model.ParkingSpot" table="parkingspot">
         <id name="spotNumber" type="int" column="spotnumber">
-            <generator class="native"/>
+            <generator class="foreign">
+                <param name="property">employee</param>
+            </generator>
         </id>
 
         <property name="location" column="location" type="string"/>
-        <one-to-one name="employee" class="org.example.ormappingmpfile.model.Employee" cascade="all">
+        <one-to-one name="employee" class="org.example.ormappingmpfile.model.Employee" constrained="true">
         </one-to-one>
     </class>
 </hibernate-mapping>
