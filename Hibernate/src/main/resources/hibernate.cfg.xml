@@ -13,8 +13,12 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
 
-        <mapping class="org.example.ormappingannotation.model.Employee"/>
-        <mapping class="org.example.ormappingannotation.model.ParkingSpot"/>
+<!--        <mapping class="org.example.ormappingannotation.model.Employee"/>-->
+<!--        <mapping class="org.example.ormappingannotation.model.ParkingSpot"/>-->
 <!--        <mapping resource="student.hbm.xml"/>-->
+<!--        <mapping class="org.example.ormappingmpfile.model.Employee"/>-->
+<!--        <mapping class="org.example.ormappingmpfile.model.ParkingSpot"/>-->
+        <mapping resource="employee.hbm.xml"/>
+        <mapping resource="parkingspot.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
