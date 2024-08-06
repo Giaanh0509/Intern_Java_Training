@@ -3,10 +3,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="emailService" class="com.example.springcore.dependencyinjection.configxml.service.EmailService"/>
+    <bean id="emailService" class="com.example.springcore.dependencyinjection.configxml.service.EmailService">
+    </bean>
 
     <bean id="notificationService" class="com.example.springcore.dependencyinjection.configxml.service.NotificationService">
-        <constructor-arg ref="emailService"/>
+        <constructor-arg ref="emailService">
+        </constructor-arg>
     </bean>
 
 </beans>
