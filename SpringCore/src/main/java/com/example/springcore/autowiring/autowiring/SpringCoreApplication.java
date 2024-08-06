@@ -14,6 +14,5 @@ public class SpringCoreApplication {
         System.out.println(student.getId());
         System.out.println(student.getName());
         System.out.println(student.getAge());
-        System.out.println(student.getAddress());
     }
 }
