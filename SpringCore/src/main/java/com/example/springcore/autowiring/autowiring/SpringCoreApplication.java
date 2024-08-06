@@ -1,19 +1,19 @@
-package com.example.springcore.dependencyinjection.configxml;
-import com.example.springcore.dependencyinjection.configxml.service.NotificationService;
+package com.example.springcore.autowiring.autowiring;
+import com.example.springcore.autowiring.notautowiring.entity.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ImportResource;
 
-
 @SpringBootApplication
-@ImportResource("classpath:dependencyinjection/applicationContext.xml")
+@ImportResource("classpath:autowiring/applicationContext.xml")
 public class SpringCoreApplication {
-
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(SpringCoreApplication.class, args);
-        NotificationService notificationService = context.getBean("notificationService", NotificationService.class);
-        notificationService.sendNotification("Hi there!", "example@example.com");
+        Student student = context.getBean("student", Student.class);
+        System.out.println(student.getId());
+        System.out.println(student.getName());
+        System.out.println(student.getAge());
+        System.out.println(student.getAddress());
     }
-
 }
