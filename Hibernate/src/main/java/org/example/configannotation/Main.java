@@ -19,9 +19,9 @@ public class Main {
         // Dùng cái nào thì uncomment đi
 
         // Create
-//        Employee employee = new Employee("John", "Cena", "johncena9999@gmail.com");
-//        int employeeId = createEmployee(employee);
-//        System.out.println("Created Employee with ID: " + employeeId);
+        Employee employee = new Employee("John", "Cena", "johncena9999@gmail.com");
+        int employeeId = createEmployee(employee);
+        System.out.println("Created Employee with ID: " + employeeId);
 
         // Read
 //        Employee retrievedEmployee = readEmployee(3);

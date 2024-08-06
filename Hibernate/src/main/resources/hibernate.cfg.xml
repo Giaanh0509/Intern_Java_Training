@@ -17,8 +17,9 @@
 <!--        <mapping class="org.example.ormappingannotation.model.ParkingSpot"/>-->
 <!--        <mapping resource="student.hbm.xml"/>-->
 <!--        <mapping class="org.example.ormappingmpfile.model.Employee"/>-->
-<!--        <mapping class="org.example.ormappingmpfile.model.ParkingSpot"/>-->
+<!--&lt;!&ndash;        <mapping class="org.example.ormappingmpfile.model.ParkingSpot"/>&ndash;&gt;-->
         <mapping resource="employee.hbm.xml"/>
         <mapping resource="parkingspot.hbm.xml"/>
+<!--        <mapping resource="org.example.configannotation.model.Employee" />-->
     </session-factory>
 </hibernate-configuration>
