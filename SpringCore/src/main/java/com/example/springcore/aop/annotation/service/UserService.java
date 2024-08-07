@@ -1,4 +1,4 @@
-package com.example.springcore.aop.service;
+package com.example.springcore.aop.annotation.service;
 
 import org.springframework.stereotype.Service;
 

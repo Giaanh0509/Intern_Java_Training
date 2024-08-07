@@ -1,5 +1,5 @@
-package com.example.springcore.aop.controller;
-import com.example.springcore.aop.service.UserService;
+package com.example.springcore.aop.annotation.controller;
+import com.example.springcore.aop.annotation.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
