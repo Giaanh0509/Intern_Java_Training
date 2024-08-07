@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- Define the aspect -->
+    <bean id="loggingAspect" class="com.example.springcore.aop.configxml.aspect.LoggingAspect"/>
+
+    <!-- Configure AspectJ auto-proxying -->
+    <aop:config>
+        <aop:aspect id="loggingAspect" ref="loggingAspect">
+            <aop:before pointcut="execution(* com.example.springcore.aop.configxml.service.*.*(..))" method="logBeforeMethod"/>
+        </aop:aspect>
+    </aop:config>
+
+    <!-- Define other beans -->
+    <bean id="userService" class="com.example.springcore.aop.configxml.service.UserService"/>
+    <bean id="userController" class="com.example.springcore.aop.configxml.controller.UserController"/>
+</beans>
