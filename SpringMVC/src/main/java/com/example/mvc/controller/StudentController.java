@@ -49,6 +49,7 @@ public class StudentController {
 
     @PutMapping("/saveupdate")
     public String saveUpdate(@ModelAttribute("student") Student student) {
+        studentService.updateStudent(student);
         return "redirect:/students/list";
     }
 
