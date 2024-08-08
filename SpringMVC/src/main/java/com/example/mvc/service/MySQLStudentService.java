@@ -11,7 +11,6 @@ import java.util.List;
 @Service
 @Transactional
 public class MySQLStudentService implements StudentService{
-    //    private StudentDAO studentDAO;
     private StudentRepository studentRepository;
 
     @Autowired
