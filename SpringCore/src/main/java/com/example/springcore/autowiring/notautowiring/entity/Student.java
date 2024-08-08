@@ -1,10 +1,24 @@
 package com.example.springcore.autowiring.notautowiring.entity;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Student {
     private int id;
     private String name;
     private int age;
+
+    @Autowired
     private Address address;
+
+    @Autowired
+    public Student(Address address) {
+        this.address = address;
+    }
+
+    @Autowired
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 
     public Student() {
     }
@@ -44,7 +58,4 @@ public class Student {
         return address;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
-    }
 }

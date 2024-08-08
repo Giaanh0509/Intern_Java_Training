@@ -1,16 +1,16 @@
 package com.example.mvc.service;
-
-import com.example.mvc.dao.StudentRepository;
-import com.example.mvc.entity.Student;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.example.mvc.dao.StudentRepository;
+import com.example.mvc.entity.Student;
 
 import java.util.List;
 
 @Service
 @Transactional
 public class MySQLStudentService implements StudentService{
+//    private StudentDAO studentDAO;
     private StudentRepository studentRepository;
 
     @Autowired
@@ -49,4 +49,3 @@ public class MySQLStudentService implements StudentService{
         return studentRepository.findByFirstNameNot(firstName);
     }
 }
-
