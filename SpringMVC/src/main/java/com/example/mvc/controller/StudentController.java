@@ -40,6 +40,14 @@ public class StudentController {
         return "redirect:/students/list";
     }
 
+    @GetMapping("/search")
+    public String search(@RequestParam("firstname") String firstName, Model model) {
+        List<Student> students = studentService.getStudentByFirstName(firstName);
+        model.addAttribute("students", students);
+        model.addAttribute("firstname", firstName);
+        return "student/students";
+    }
+
     @GetMapping("/update")
     public String update(@RequestParam("id") Integer id, Model model) {
         Student student = studentService.getByID(id);
