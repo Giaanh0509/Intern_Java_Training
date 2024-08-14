@@ -11,6 +11,16 @@
     <h3>Danh sách sinh viên</h3>
     <hr/>
     <a th:href="@{/students/create}" class="btn btn-success btn-sm mb-4">Thêm mới</a>
+
+    <hr/>
+
+    <form action="#" th:action="@{/students/search}" th:method="get">
+        <input type="text" name="firstname" th:value="${firstName}" placeholder="Input name ..." />
+        <button type="submit">Search</button>
+    </form>
+
+    <hr/>
+
     <table class="table table-bordered table-striped">
         <thead class="table-info">
         <tr>
