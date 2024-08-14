@@ -24,6 +24,11 @@ public class MySQLStudentService implements StudentService{
     }
 
     @Override
+    public List<Student> getStudentByFirstName(String firstName) {
+        return studentRepository.findByFirstName(firstName);
+    }
+
+    @Override
     public Student getByID(int id) {
         return studentRepository.findById(id);
     }

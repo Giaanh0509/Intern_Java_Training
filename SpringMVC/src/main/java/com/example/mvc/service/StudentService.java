@@ -7,6 +7,8 @@ import java.util.List;
 public interface StudentService {
     public List<Student> getAll();
 
+    public List<Student> getStudentByFirstName(String firstName);
+
     public Student getByID(int id);
 
     public Student addStudent(Student student);
