@@ -11,10 +11,10 @@
     <h3>Them moi sinh vien</h3>
     <hr/>
     <form action="#" th:action="@{/students/save}" th:object="${student}" th:method="post">
-        <input type="text" th:field="*{lastName}" placeholder="Nhap ho va chu dem" class="form-control w-25 mb-2" />
-        <input type="text" th:field="*{firstName}" placeholder="Nhap ten" class="form-control w-25 mb-2" />
-        <input type="email" th:field="*{email}" placeholder="Nhap email" class="form-control w-25 mb-2" />
-        <button type="submit" class="btn btn-success col-2">Luu</button>
+        <input type="text" th:field="*{lastName}" placeholder="Lastname" class="form-control w-25 mb-2" />
+        <input type="text" th:field="*{firstName}" placeholder="Firstname" class="form-control w-25 mb-2" />
+        <input type="email" th:field="*{email}" placeholder="Email" class="form-control w-25 mb-2" />
+        <button type="submit" class="btn btn-success col-2">Create</button>
     </form>
 </div>
 
