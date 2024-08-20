@@ -34,7 +34,7 @@ public class StudentController {
         return "/student/students-newcreate-form";
     }
 
-//    @RequestMapping(value = "", method = "")
+//    @RequestMapping(value = "/save", method = "POST")
     @PostMapping("/save")
     public String save(@ModelAttribute("student") Student student) {
         studentService.addStudent(student);
