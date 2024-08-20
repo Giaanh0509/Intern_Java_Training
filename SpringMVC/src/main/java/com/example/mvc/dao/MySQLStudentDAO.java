@@ -1,6 +1,6 @@
 package com.example.mvc.dao;
 
-import com.example.mvc.entity.Student;
+import com.example.mvc.model.Student;
 import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;

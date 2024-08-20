@@ -3,7 +3,7 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.mvc.dao.StudentRepository;
-import com.example.mvc.entity.Student;
+import com.example.mvc.model.Student;
 
 import java.util.List;
 

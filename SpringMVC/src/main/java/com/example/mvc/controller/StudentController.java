@@ -1,12 +1,10 @@
 package com.example.mvc.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import com.example.mvc.entity.Student;
+import com.example.mvc.model.Student;
 import com.example.mvc.service.StudentService;
 import java.util.List;
 

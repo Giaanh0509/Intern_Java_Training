@@ -1,6 +1,6 @@
 package com.example.mvc.dao;
 
-import com.example.mvc.entity.Student;
+import com.example.mvc.model.Student;
 
 import java.util.List;
 
